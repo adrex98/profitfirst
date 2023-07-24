@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: #f4f4f4;  
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* max-width: 800px; */
+    width: 100%;
+    margin: auto;
+    gap: 20px;
+    padding: 15px;
+    order: 1;
+    /* border-radius: 8px; */
+    /* background: white; */
+    /* box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15); */
+}
+
+#wrapper_inputs,
+#wrapper_config {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;  
+    border-radius: 5px;  
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);  
+    background: white;  
+    align-items: center;
+}
+
+[id^="form-group"] {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+[id^="form-group"] label {
+    /* font-weight: bold; */
+    color: #202124;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+[id^="form-group"] input {
+    width: 100%;
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #dadce0;
+    border-radius: 10px;
+    color: #202124;
+    background-color: #f1f3f4;
+}
+#button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#button-container button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5f6368;
+    line-height: 16px;
+    padding: 10px 24px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+#button-container button:hover {
+    background: rgba(26,115,232,0.04);
+}
+
+#button-container button:active {
+    background: rgba(66,133,244,0.12);
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+#wrapper-resultados {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    width: 100%;
+    /* gap: 20px; */
+    margin-top: 40px;
+}
+#wrapper-utilidad-bruta,
+#wrapper-utilidad-neta {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px auto; */
+    border: 2px solid #90cdf4; /* Borde de color celeste */
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: #ebf8ff; /* Fondo de color celeste suave */
+    position: relative;
+    /* margin-bottom: ; */
+}
+
+#wrapper-utilidad-bruta label,
+#wrapper-utilidad-neta label {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background: white; */
+    padding: 0 10px;
+    width: 100%;
+    font-weight: 400;
+    /* margin-bottom: 10px; */
+}
+
+#wrapper-utilidad-bruta span,
+#wrapper-utilidad-neta span {
+    
+    font-size: 24px;
+    font-weight: bold;
+    color: #202124;
+}
+
+@media (min-width: 768px) {
+    #main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        /* width: 50%; */
+        gap: 20px;
+    }
+}
+.mindmap ul {
+    list-style-type: none;
+    position: relative;
+    padding: 1em 0;
+    margin-left: 2em;
+  }
+  
+  .mindmap li {
+    display: block;
+    padding: 1em;
+    background-color: #f4f4f4;
+    margin-bottom: 1em;
+  }
+  
+  .mindmap li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1em;
+    width: 0.8em;
+    height: 0.8em;
+    border: 0.2em solid #000;
+    border-radius: 50%;
+    background: #fff;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .mindmap li::after {
+    position: absolute;
+    content: "";
+    top: 0.8em;
+    left: -0.2em;
+    width: 0;
+    height: calc(100% - 1.8em);
+    border-left: 0.2em solid #000;
+  }
+#graphContainer {
+    order: 2;
+    /* background-color: black; */
+    /* width: 50%; */
+    /* height: auto; */
+}

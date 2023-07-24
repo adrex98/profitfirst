@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+   <div id="wrapper">
+    <div id="main-content">
+    <div id="wrapper_inputs">
+        <div id="form-group-venta">
+            <label for="venta">Venta</label>
+            <input id="venta" type="number" placeholder="Introduzca el Ingreso" />
+        </div>
+        <div id="form-group-compras">
+            <label for="compras">Compras</label>
+            <input id="compras" type="number" placeholder="Introducir el valor de las Compras" />
+        </div>
+        <div id="form-group-gastos">
+            <label for="gastos">Gastos</label>
+            <input id="gastos" type="number" placeholder="Introducir el valor de los gastos" />
+        </div>
+        <div id="form-group-impuestos">
+            <label for="impuestos">Impuestos</label>
+            <input id="impuestos" type="number" placeholder="Introducir el valor de los impuestos" />
+        </div>
+        <div id="button-container">
+            <button id="calcular">Calcular</button>
+        </div>
+        <div id="wrapper-resultados">
+            <div id="wrapper-utilidad-bruta">
+                <label for="valor-utilidad-bruta">Utilidad Bruta</label>
+                <span id="valor-utilidad-bruta"></span>
+            </div>
+            <div id="wrapper-utilidad-neta">
+                <label for="valor-utilidad-neta">Utilidad Neta</label>
+                <span id="valor-utilidad-neta"></span>
+            </div>
+            </div>
+    </div>
+    <div id="wrapper_config">
+        <div id="form-group-owner-pay">
+            <label for="owner-pay">Owner Pay</label>
+            <input id="owner-pay" type="number" placeholder="% Owner Pay" />
+        </div>
+        <div id="form-group-operating-expensas">
+            <label for="operating-expensas">Operating Expensas</label>
+            <input id="operating-expensas" type="number" placeholder="% Operating Expensas" />
+        </div>
+        <div id="form-group-profit">
+            <label for="profit">Profit</label>
+            <input id="profit" type="number" placeholder="% Profit" />
+        </div>
+        <div id="form-group-taxes">
+            <label for="taxes">Taxes</label>
+            <input id="taxes" type="number" placeholder="% taxes" />
+        </div>
+        <div id="form-group-profit-hold">
+            <label for="profit-hold">Profit HOLD</label>
+            <input id="profit-hold" type="number" placeholder="% Profit HOLD" />
+        </div>
+        <div id="form-group-taxes-hold">
+            <label for="taxes-hold">Taxes HOLD</label>
+            <input id="taxes-hold" type="number" placeholder="% Taxes HOLD" />
+        </div>
+        <div id="button-container">
+            <button id="save-data">Guardar</button>
+        </div>
+
+        <table>
+            <tr>
+                <td>Owner Pay:</td>
+                <td id="saved-owner-pay"></td>
+            </tr>
+            <tr>
+                <td>Operating Expensas:</td>
+                <td id="saved-operating-expensas"></td>
+            </tr>
+            <tr>
+                <td>Profit:</td>
+                <td id="saved-profit"></td>
+            </tr>
+            <tr>
+                <td>Taxes:</td>
+                <td id="saved-taxes"></td>
+            </tr>
+            <tr>
+                <td>Profit HOLD:</td>
+                <td id="saved-profit-hold"></td>
+            </tr>
+            <tr>
+                <td>Taxes HOLD:</td>
+                <td id="saved-taxes-hold"></td>
+            </tr>
+        </table>
+        
+    </div>
+    <!-- <div class="mindmap">
+        <ul>
+          <li>Ingreso (100%)
+            <ul>
+              <li>Owner Pay</li>
+              <li>Operating Expenses</li>
+              <li>Profit</li>
+              <li>Taxes</li>
+              <li>Profit HOLD</li>
+              <li>Taxes HOLD</li>
+            </ul>
+          </li>
+        </ul>
+      </div> -->
+    </div>
+      <div id="graphContainer"></div>
+   </div> 
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/graphs.js"></script>
+</body>
+</html>
